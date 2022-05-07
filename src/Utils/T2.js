@@ -7,7 +7,6 @@ const T2 = (props) => {
     const { style } = props
     const defaultStyle = {
         ...fontScale.xlarge,
-        fontFamily: "Nunito-Regular",
     }
 
     return (

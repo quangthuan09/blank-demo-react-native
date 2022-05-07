@@ -7,7 +7,6 @@ const T4 = (props) => {
     const { style } = props
     const defaultStyle = {
         ...fontScale.medium,
-        fontFamily: "Nunito-Regular",
     }
 
     return (
