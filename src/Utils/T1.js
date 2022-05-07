@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react"
 import { Text } from "react-native"
-import { fontScale } from "../../config/Normalize"
-
+import { fontScale } from "../Config"
 const T1 = (props) => {
     const { style } = props
     const defaultStyle = {

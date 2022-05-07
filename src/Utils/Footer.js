@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react"
 import { StyleSheet, View } from "react-native"
-import { normalize } from "../../config"
+import { normalize } from "../Config"
 
 const Footer = (props) => {
     const { style } = props

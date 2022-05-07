@@ -6,7 +6,7 @@ const { width, height } = Dimensions.get("window")
 export const deviceWidth = width
 export const deviceHeight = height
 
-const Normalize = (size) => {
+const normalize = (size) => {
     if (ratio >= 2 && ratio < 3) {
         if (width < 360) 
             return size * 0.95
@@ -48,7 +48,7 @@ export const create = (
         normalizedStyles[key] = {}
         Object.keys(styles[key]).forEach((property) => {
             if (targetProperties.includes(property)) 
-                normalizedStyles[key][property] = Normalize(styles[key][property])
+                normalizedStyles[key][property] = normalize(styles[key][property])
             else 
                 normalizedStyles[key][property] = styles[key][property]
       
@@ -84,26 +84,26 @@ export const heightPercentageToDP = (heightPercent) => {
 
 export const fontScale = {
     mini: {
-        fontSize: Normalize(8),
+        fontSize: normalize(8),
     },
     miniX: {
-        fontSize: Normalize(10),
+        fontSize: normalize(10),
     },
     small: {
-        fontSize: Normalize(13),
+        fontSize: normalize(13),
     },
     medium: {
-        fontSize: Normalize(15),
+        fontSize: normalize(15),
     },
     large: {
-        fontSize: Normalize(18),
+        fontSize: normalize(18),
     },
     xlarge: {
-        fontSize: Normalize(23),
+        fontSize: normalize(23),
     },
     xxlarge: {
-        fontSize: Normalize(27),
+        fontSize: normalize(27),
     },
 }
 
-export default Normalize
+export default normalize

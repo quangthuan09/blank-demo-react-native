@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { StatusBar, View } from "react-native"
 import React from "react"
-import { Colors, screenStyles } from "../../config"
+import { Colors, screenStyles } from "../Config"
 const Head = (props) => {
     const { style } = props
     return (
